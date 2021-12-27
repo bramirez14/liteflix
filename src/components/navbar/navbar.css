@@ -1,11 +1,12 @@
-
+/* Navbar*/
 .navbar {
-  height: 40px;
   position: fixed;
+ top:0;
    z-index: 1; 
    width: 100%; 
-   border:solid 1px;
-  /* margin: 16px 24px 16px 24px; */
+   padding-top: 16px;
+   padding-right: 24px;
+   padding-left: 24px;
 }
 
 .agrpelicula {
@@ -13,7 +14,7 @@
   height: 36px;
   width: 36px;
   border-radius: 20px;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .lineh {
   position: absolute;
@@ -32,7 +33,9 @@
 }
 /* ORIGINAL DE LITEFLIX */
 .original {
-  position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 .oriLiteflixbold {
   font-weight: bold;
@@ -43,7 +46,6 @@
 }
 
 .oriLiteflix {
-  position: absolute;
   font-size: 28px;
   color: #64eebc;
   letter-spacing: 3px;
@@ -51,8 +53,10 @@
 
 /* Perfil */
 .perfil{
+
 width: 36px;
 height: 36px;
 background: url(perfil.png);
 border-radius: 50%;
+
 }
