@@ -1,4 +1,6 @@
-.card{
-    margin-left:20px;
-    padding:2px;
+.container-pelicula{
+  padding:15px
+}
+.pelicula{
+    border-radius: 5px;
 }
