@@ -8,13 +8,7 @@ import "./agregar.css";
 import { File } from "../../file/File";
 const { Dragger } = Upload;
 export const AgregarPeli = () => {
-    const normFile =  (e) => {
-        if (Array.isArray(e)) {
-          return e;
-        }
-      
-        return e && e.fileList;
-      };
+
   return (
     <>
       <div className="contenedor">
@@ -31,18 +25,16 @@ export const AgregarPeli = () => {
             <h3 className="agregar">AGREGAR PELICULA</h3>
           </Col>
         </Row>
-<Form>
-<Row gutter={[10,30]} justify="center" className='contenedor-form' >
-    
-               <Col span={24}>
-           <File name='Agregar un archivo' icon={<GiPaperClip className="btn-icon" />}/>
+        <Form>
+          <Row gutter={[10, 30]} justify="center" className="contenedor-form">
+            <Col span={24}>
+              <File
+                name="Agregar un archivo"
+                icon={<GiPaperClip className="btn-icon" />}
+              />
+            </Col>
 
-          </Col>
-        
-
-        
-          <Col>
-           
+            <Col>
               <Form.Item
                 className="contenedor-titulo"
                 name="titulo"
@@ -61,24 +53,21 @@ export const AgregarPeli = () => {
                 />
               </Form.Item>
 
-              <Form.Item
-              className='botones'
-              >
-                <Col span={24} className='contenedor-subir'>
-                  <Button  className='subir' htmlType="submit" > SUBIR PELICULA </Button>
+              <Form.Item className="botones">
+                <Col span={24} className="contenedor-subir">
+                  <Button className="subir" htmlType="submit">
+                    {" "}
+                    SUBIR PELICULA{" "}
+                  </Button>
                 </Col>
 
-                <Col span={24} className='contenedor-salir'>
-                  <Button className='salir' >SALIR </Button>
+                <Col span={24} className="contenedor-salir">
+                  <Button className="salir">SALIR </Button>
                 </Col>
-
               </Form.Item>
-              </Col>
-    
-          
-        </Row>
-</Form>
-      
+            </Col>
+          </Row>
+        </Form>
       </div>
     </>
   );

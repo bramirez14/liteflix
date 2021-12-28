@@ -4,9 +4,7 @@ import { Home } from './Home';
 import './index.css'
 import { Router } from './routes/Router';
 ReactDOM.render(
-  <React.StrictMode>
-    <Router/>
-  </React.StrictMode>,
+    <Router/>,
   document.getElementById('root')
 );
 

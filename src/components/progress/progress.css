@@ -1,0 +1,29 @@
+.contenedor-progress {
+  margin-top: 20px;
+  padding:4px;
+}
+.carga {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 4px;
+
+  color: #ffffff;
+}
+#progress {
+  width: 100%;
+
+  height: 4px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#bar {
+  position: absolute;
+  top: -2px;
+  height: 8px;
+  background: #64eebc;
+  max-width: 100%;
+}
