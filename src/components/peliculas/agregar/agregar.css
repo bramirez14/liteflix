@@ -1,0 +1,90 @@
+.contenedor {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/* Reproducir */
+.contenedor-agregar {
+  margin-top: 96px;
+}
+.agregar {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 4px;
+
+  color: #64eebc;
+}
+/* Agregar archivo  */
+.contenedor-archivo {
+  margin-top: 50px;
+}
+
+
+/* Fill 1 */
+.btn-icon {
+  transform: rotate(270deg);
+  margin-right: 10px;
+  font-size: 19px;
+}
+/* Titulo*/
+.contenedor-form {
+  margin-top: 40px;
+}
+.contenedor-titulo {
+  border-bottom: solid 1px #ffffff;
+  width: 248px;
+}
+.titulo {
+  text-align: center;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+
+/*Boton Subir y Salir*/
+.botones{
+    margin-top:70px;
+}
+.contenedor-subir {
+  margin-top: 24px;
+}
+.subir {
+  width: 248px;
+  height: 56px;
+  background: rgba(255, 255, 255, 1);
+
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 4px;
+
+  color: #242424;
+}
+
+.salir {
+  width: 248px;
+  height: 56px;
+  margin-top: 24px;
+  background: rgba(36, 36, 36, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 4px;
+  color: #ffffff;
+}

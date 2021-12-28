@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Home } from './Home';
 import './index.css'
+import { Router } from './routes/Router';
 ReactDOM.render(
   <React.StrictMode>
-    <Home/>
+    <Router/>
   </React.StrictMode>,
   document.getElementById('root')
 );
