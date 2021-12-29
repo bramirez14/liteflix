@@ -11,7 +11,6 @@ export const AgregarPeli = () => {
 
   return (
     <>
-      <div className="contenedor">
         <Row gutter={30}>
           <Col xs={4} sm={4} md={4} lg={24} xl={24}>
             <div></div>
@@ -56,8 +55,7 @@ export const AgregarPeli = () => {
               <Form.Item className="botones">
                 <Col span={24} className="contenedor-subir">
                   <Button className="subir" htmlType="submit">
-                    {" "}
-                    SUBIR PELICULA{" "}
+                    SUBIR PELICULA
                   </Button>
                 </Col>
 
@@ -68,7 +66,6 @@ export const AgregarPeli = () => {
             </Col>
           </Row>
         </Form>
-      </div>
     </>
   );
 };

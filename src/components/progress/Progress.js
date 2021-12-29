@@ -6,8 +6,8 @@ export const Progress = ({porcentage,bg='#64EEBC',title='CARGANDO',button='CANCE
     return (
         <>
         <div className='container-progress'>
-        <span className='load'> {title} {bg!=='#FF0000' && `${porcentage}%`}  </span>
-       
+        { title!=='CARGADO'?<span > {title} {bg!=='#FF0000' && `${porcentage}%`}  </span>
+       :<span className='load'> {porcentage}% {title} </span>}
              <div id="progress">
     <div id="bar" style={{width:`${porcentage}%`,background:bg,  }}></div>
     <Button className='btn-progress' type='link' style={{color:btncolor}}>{button}</Button>

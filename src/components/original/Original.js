@@ -1,10 +1,10 @@
 import { Typography } from 'antd';
 import './original.css'
 const { Title } = Typography;
-export const Original = ({name,top,icon}) => {
+export const Original = ({name1,name2,top,icon}) => {
     return (  
             
-            <h4  style={{marginTop:top}} className='subtitle'>{name} {icon}</h4>
+            <h4  style={{marginTop:top}} className='subtitle'>{name1} <span className='subtitle2'>{name2}</span> {icon}</h4>
 
     )
 }

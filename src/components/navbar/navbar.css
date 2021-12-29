@@ -38,17 +38,37 @@
     justify-content: center;
 }
 .oriLiteflixbold {
-  font-weight: bold;
+
+  
+  font-family: Bebas Neue;
   font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 4px;
   text-align: center;
-  color: #64eebc;
-  letter-spacing: 3px;
+  
+ 
+  /* identical to box height */
+
+text-align: center;
+letter-spacing: 4px;
+
+color: #64EEBC;
+
 }
 
 .oriLiteflix {
-  font-size: 28px;
-  color: #64eebc;
-  letter-spacing: 3px;
+font-family: Bebas Neue;
+font-size: 28px;
+font-style: normal;
+line-height: 28px;
+letter-spacing: 4px;
+text-align: center;
+  text-align: center;
+  letter-spacing: 4px;
+  
+  color: #64EEBC;
 }
 
 /* Perfil */
