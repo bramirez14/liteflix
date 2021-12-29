@@ -1,23 +1,25 @@
-.contenedor-progress {
+.container-progress {
   margin-top: 20px;
   padding:4px;
 }
-.carga {
+/* progress*/
+.load {
+  width:316px;
   font-family: Bebas Neue;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 4px;
+  font-weight: 400;
+font-size: 13px;
+line-height: 14px;
+letter-spacing: 4px;
 
-  color: #ffffff;
+color: #FFFFFF;
 }
 #progress {
   width: 100%;
-
   height: 4px;
   position: relative;
   background: rgba(255, 255, 255, 0.5);
+  margin-top:14px;
 }
 
 #bar {
@@ -26,4 +28,21 @@
   height: 8px;
   background: #64eebc;
   max-width: 100%;
+}
+
+/*boton  del load*/
+.btn-progress{
+  float:right;
+  margin-top: 16px;
+  margin-right:-16px;
+  font-family: Bebas Neue;
+font-style: normal;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: right;
+letter-spacing: 4px;
+
+color: #FFFFFF;
 }

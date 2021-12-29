@@ -1,15 +1,16 @@
-import {ProgressBarLine} from 'react-progressbar-line'
+import {Button} from 'antd'
 import './progress.css'
 import React from 'react'
 
-export const Progress = ({porcentaje}) => {
+export const Progress = ({porcentage,bg='#64EEBC',title='CARGANDO',button='CANCELAR',btncolor='#FFFFFF'}) => {
     return (
         <>
-        <div className='contenedor-progress'>
-        <p className='carga'> Cargando {porcentaje}%  </p>
+        <div className='container-progress'>
+        <span className='load'> {title} {bg!=='#FF0000' && `${porcentage}%`}  </span>
        
              <div id="progress">
-    <div id="bar" style={{width:`${porcentaje}+%` }}></div>
+    <div id="bar" style={{width:`${porcentage}%`,background:bg,  }}></div>
+    <Button className='btn-progress' type='link' style={{color:btncolor}}>{button}</Button>
 </div>
        </div>
         </>
