@@ -33,13 +33,20 @@ const [file, setFile] = useState({})
       {exito ? (
         <Agregadas />
       ) : (
-        <>
+        
+        <div className='container'>
+
           <Row gutter={30}>
             <Col xs={4} sm={4} md={4} lg={24} xl={24}>
               <div></div>
             </Col>
+            <Col xs={16} sm={16} md={16} lg={24} xl={24}>
             <Logo />
+            </Col>
+            <Col xs={4} sm={4} md={4} lg={24} xl={24}>
             <Usuario />
+            </Col>
+
           </Row>
 
           <Row justify="center" className="contenedor-agregar">
@@ -90,8 +97,11 @@ const [file, setFile] = useState({})
               </Col>
             </Row>
           </Form>
-        </>
+
+          </div>
       )}
     </>
+        
+
   );
 };

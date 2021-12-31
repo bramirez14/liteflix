@@ -3,7 +3,7 @@ import { Navbar } from "./components/navbar/Navbar";
 import "antd/dist/antd.css";
 import { Original } from "./components/original/Original";
 import { Title } from "./components/tittle/Title";
-import { Row, Col, Button, Card } from "antd";
+import { Row, Col, Button, Dropdown } from "antd";
 import {
   CaretRightOutlined,
   PlusOutlined,
@@ -14,13 +14,14 @@ import pelicula1 from "./components/peliculas/pelicula1.png";
 import pelicula2 from "./components/peliculas/pelicula2.png";
 import pelicula3 from "./components/peliculas/pelicula3.png";
 import pelicula4 from "./components/peliculas/pelicula4.png";
+import { Drop } from "./components/dropdown/Drop";
 
 export const Home = () => {
   // titulo casa de papel mejora el alto
   // subtitulos achicarlos
   return (
     <>
-    <div className="container">
+    <div className="container-home">
         <Navbar />
 
         <Original name1="ORIGNILA DE" name2= "LITEFLIX" top={214} />
@@ -46,12 +47,13 @@ export const Home = () => {
         </div>
         
         <div className="look" />
+<Row><Col>
+<div style={{marginTop:107,marginLeft:100}}>
+  <Drop/>
+</div>
 
-        <Original
-          name1="VER:" name2="POPULARES"
-          top={104}
-          icon={<DownOutlined style={{ fontSize: 17 }} />}
-        />
+
+</Col></Row>
         
     <div className="container-movies">
 
