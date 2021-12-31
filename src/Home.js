@@ -9,7 +9,7 @@ import {
   PlusOutlined,
   DownOutlined,
 } from "@ant-design/icons";
-import { Pelicula } from "./components/peliculas/Pelicula";
+import { Movie } from "./components/peliculas/Movie";
 import pelicula1 from "./components/peliculas/pelicula1.png";
 import pelicula2 from "./components/peliculas/pelicula2.png";
 import pelicula3 from "./components/peliculas/pelicula3.png";
@@ -19,7 +19,8 @@ export const Home = () => {
   // titulo casa de papel mejora el alto
   // subtitulos achicarlos
   return (
-      <div className="container">
+    <>
+    <div className="container">
         <Navbar />
 
         <Original name1="ORIGNILA DE" name2= "LITEFLIX" top={214} />
@@ -29,9 +30,6 @@ export const Home = () => {
             <Title />
           </Col>
         </Row>
-
-        <div className="look" />
-
         <Row gutter={[10, 15]} justify="center">
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
             <Button className="play" type="text">
@@ -45,28 +43,34 @@ export const Home = () => {
             </Button>
           </Col>
         </Row>
+        </div>
+        
+        <div className="look" />
 
         <Original
           name1="VER:" name2="POPULARES"
-          top={57}
+          top={104}
           icon={<DownOutlined style={{ fontSize: 17 }} />}
         />
+        
+    <div className="container-movies">
 
         {/* /**Peliculas */}
         <Row gutter={[10,25]}>
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-            <Pelicula pelicula={pelicula1} />
+            <Movie movie={pelicula1} namemovie='House of Cards'/>
           </Col>
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-            <Pelicula pelicula={pelicula2} />
+            <Movie movie={pelicula2} namemovie='THE CROWN'/>
           </Col>
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-            <Pelicula pelicula={pelicula3} />
+            <Movie movie={pelicula3} namemovie='STRANGER THINGS'/>
           </Col>
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-            <Pelicula pelicula={pelicula4} />
+            <Movie movie={pelicula4} namemovie='MARSEILLE'/>
           </Col>
         </Row>
       </div>
+      </>
   );
 };

@@ -1,0 +1,185 @@
+
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor figure {
+  position: relative;
+  height: 194px;
+  cursor: pointer;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.contenedor figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  /* will-change: transform; */
+}
+.contenedor figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 36, 36, 0.7);
+  border-radius: 4px;
+  transition: all 400ms ease-out;
+  opacity: 1;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedor figure .capa h3 {
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+  margin-top: 1px;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  letter-spacing: 4px;
+
+  color: #ffffff;
+  margin-top: 140px;
+}
+
+.contenedor figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+.contenedor figure:hover > .capa h3 {
+  margin-top: 125px;
+  margin-bottom: 15px;
+  margin-right: 74px;
+}
+
+.contenedor figure:hover > .logo-play {
+  height: 24px;
+  width: 24px;
+
+  position: absolute;
+  top: 120px;
+  left: 27px;
+  transition: all 400ms ease-out;
+  background: rgba(36, 36, 36, 0.5);
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+}
+.contenedor figure:hover > .logo-play .icon-play {
+  position: absolute;
+  top: -7px;
+  left: -8px;
+  font-size: 14px;
+  transition: all 400ms ease-out;
+}
+
+.contenedor figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+/*icono reproducir*/
+.logo-play {
+  height: 48px;
+  width: 48px;
+  background: rgba(36, 36, 36, 0.5);
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  position: absolute;
+  top: 62px;
+  left: 137px;
+}
+
+.icon-play {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 25px;
+  margin-left: 13px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.calificacion {
+    display:none;
+  position: absolute;
+  bottom: 30px;
+  left: 27px;
+}
+.icon-star {
+  color: #64eebc;
+  border-radius: 0.2px;
+}
+.rating {
+    display:none;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  /* identical to box height, or 86% */
+
+  letter-spacing: 2px;
+
+  color: #ffffff;
+}
+
+.anno {
+    display:none;
+  position: absolute;
+  right: 22px;
+  bottom: 30px;
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 12px;
+  /* identical to box height, or 86% */
+
+  text-align: right;
+  letter-spacing: 2px;
+
+  color: #ffffff;
+}
+
+.contenedor figure:hover > .calificacion{
+    display:inline;
+    position: absolute;
+    bottom: 10px;
+    left: 27px;
+}
+.contenedor figure:hover > .calificacion .rating{
+    display:inline;
+    position: absolute;
+    bottom: 7px;
+    left: 20px;
+}
+.contenedor figure:hover >  .anno{
+    display:inline;
+    bottom: 12px;
+    right: 40px;
+
+}
+.gradient{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 22.78%, #000000 122.69%);
+border-radius: 4px;
+position:absolute;
+bottom:14px;
+width:327px;
+height:126px;
+}
+
+
