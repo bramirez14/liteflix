@@ -15,7 +15,7 @@ const screens = useBreakpoint();
       className="agrpelicula"
      /*  ghost */
       shape="circle"
-      type={screens.md&&'link'}
+      type={screens.md && 'link'}
       icon={
         <PlusOutlined
           style={{ fontSize: 20 }}

@@ -8,12 +8,10 @@
     letter-spacing: 4px;
     color: #FFFFFF;
     text-align: center;
-    margin-top:100px;
+    margin-top:270px;
 }
 .subtitle2{
-
-  
-    font-weight: 400;
+    font-weight: 700;
 }
 
 @media (min-width: 1024px) {
@@ -22,4 +20,9 @@
        text-align:start;
        margin-top:268px;
   } 
+}
+@media (min-width:1500px){
+.subtitle{
+    font-size: 28px;
+}
 }

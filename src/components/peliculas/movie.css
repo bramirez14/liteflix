@@ -183,8 +183,6 @@ height:126px;
 }
 
 @media (min-width: 1024px) {
- 
-  
   .contenedor-pelicula figure {
     height: 138px;
     width: 220px;
@@ -226,5 +224,29 @@ height:126px;
   right: 24px;
 }
 }
+@media (min-width:1500px){
+  .contenedor-pelicula figure {
+    height: 170px;
+    width: 300px;
+    
+  }
+  .contenedor-pelicula figure:hover > .logo-play {
+    top:70px;
+  }
+  .contenedor-pelicula figure:hover > .logo-play .icon-play {
+    top: -7px;
 
+  }
+  .contenedor-pelicula figure:hover > .capa h3 {
+    margin-top: 78px;
+ 
+}
+.contenedor-pelicula figure .logo-play {
+  top: 50px;
+  left: 104px;
+
+}
+
+
+}
 

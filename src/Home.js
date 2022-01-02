@@ -23,27 +23,36 @@ export const Home = () => {
         <div className="container-home">
           <Navbar />
 
-          <Original name1="ORIGNILA DE" name2="LITEFLIX" top={screens.md?470:154} />{/** mobile 154 desctock 273 */}
+    <Row className="container-title" >
+      <Col  xs={24} sm={24} md={24} lg={24} xl={24}>
+      <Original name1="ORIGNILA DE" name2="LITEFLIX" />{/** mobile 154 desctock 273 */}
+      </Col>
 
-          <Row>
+          
             <Col xs={24} sm={24} md={24} lg={24} xl={24}>
               <Title />
             </Col>
           </Row>
-
-          <Row gutter={[10, 15]} >
-            <Col xs={24} sm={24} md={24} lg={6} xl={6}>
-              <Button className="play" type="text">
+          
+<div className='container-btn'>
+    <Row >
+            <Col xs={24} sm={24} md={8} lg={8} xl={8} >
+                 <Button className="play" type="text">
                 <CaretRightOutlined /> REPRODUCIR
               </Button>
+             
             </Col>
 
-            <Col xs={24} sm={24} md={24} lg={6} xl={6}>
-              <Button className="list">
+            <Col xs={24} sm={24} md={8} lg={8} xl={8} >
+                 <Button className="list">
                 <PlusOutlined /> MI LISTA
               </Button>
+             
             </Col>
           </Row>
+
+</div>
+      
         </div>
 
         <div className="look" />

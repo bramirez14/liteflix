@@ -21,8 +21,8 @@
     height:60px;
     font-family: Bebas Neue;
     font-style: normal;
-    font-weight: bold;
-    font-size: 120px;
+    font-weight: 400;
+    font-size: 107px;
     line-height: 100px;
     /* identical to box height, or 83% */
     
@@ -32,8 +32,13 @@
     /* Aqua */
     
     color: #64EEBC;
-
   }
 
 
+}
+@media (min-width:1500px){
+  .title{
+    font-size: 140px;
+
+  }
 }

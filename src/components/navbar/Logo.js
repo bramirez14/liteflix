@@ -1,4 +1,3 @@
-import { Col } from "antd"
 
 export const Logo = () => {
     return (

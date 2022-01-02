@@ -108,4 +108,18 @@ color: #FFFFFF;
          background-color: #242424; 
     }
 }
+@media (min-width:1500px){
+    .container-dropdown {
+        top:50px;
+    }
+.ver{
+    font-size: 18px;
+}
+.populares{
+    font-size:  18px;
+}
+.icon-drop{
+    font-size: 15px;
+}
+}
 

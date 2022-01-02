@@ -3,7 +3,6 @@
 @media (min-width: 1024px) {
   .text-agregar {
     margin-left: 10px;
-
     font-family: Bebas Neue;
     font-style: normal;
     font-size: 18px;
@@ -27,4 +26,12 @@
     shape-rendering: optimizeSpeed;
     color: #fff;
 }
+}
+@media (min-width:1500px){
+.text-agregar{
+  font-size: 20px;
+  letter-spacing: 6px;
+
+}
+
 }
