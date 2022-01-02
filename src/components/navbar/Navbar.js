@@ -6,14 +6,16 @@ import { Usuario } from "./Usuario";
 export const Navbar = () => {
   return (
     <>
-      <Row gutter={30}>
-        <Col xs={4} sm={4} md={4} lg={24} xl={24}>
+      <Row gutter={40} >
+      <Col   xs={{ span:4,order: 1 }} sm={{ span:4,order: 1 }} md={{ span:4,order: 1}} lg={{ span:15,order: 2 }} lg={{ span:15,order: 2 }}>
           <Agregar />
         </Col>
-        <Col xs={16} sm={16} md={16} lg={24} xl={24}>
+        <Col  xs={{ span:16,order: 2}} sm={{span:16, order: 2 }} md={{ span:16,order: 2}} lg={{span:4,order: 1 }} lg={{ span:4,order: 1 }}>
           <Logo />
         </Col>
-        <Col xs={4} sm={4} md={4} lg={24} xl={24}>
+        <Col   xs={{ span:4,order: 3 }} sm={{ span:4,order: 3 }} md={{ span:4,order: 3}} lg={{ span:4,order: 3 }} lg={{ span:4,order: 3, }} 
+       
+        >
           <Usuario />
         </Col>
       </Row>

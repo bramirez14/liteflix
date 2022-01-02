@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   height: 561px;
   width: 100%;
-  position: relative;
 }
 
 .play {
@@ -43,11 +42,47 @@
   background: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, #242424 100%);
   height: 99px;
   position: absolute;
-  bottom: -23px;
+  top: 462px;
   width: 100%;
 }
 .container-movies {
   padding-top: 16px;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+@media (min-width: 1024px) {
+  .container-home {
+    background: url(Bkg.png);
+        background-repeat: no-repeat;
+    height: 939px;
+    width: 100%;
+  }
+  .look {
+    display: none;
+  }
+  .container-dropdown {
+    position: absolute;
+    top: 30px;
+    right: 95px;
+  }
+  .container-movies {
+    position: absolute;
+    top: 160px;
+    left: 1015px;
+    width:300px
+
+  }
+  .contenedor-pelicula {
+   margin:auto
+  }
+
+  .title {
+    text-align: start;
+    margin-left: 34px;
+  }
+  .list {
+    margin-left: 0px;
+  }
+ 
 }

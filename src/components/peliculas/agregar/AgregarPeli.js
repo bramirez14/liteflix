@@ -1,16 +1,20 @@
 import { useState } from "react";
-import { Row, Col, Button, Form, Input, Upload } from "antd";
+import { Row, Col, Button, Form, Input, Grid} from "antd";
 import { Logo } from "../../navbar/Logo";
 import { Usuario } from "../../navbar/Usuario";
-import { PaperClipOutlined } from "@ant-design/icons";
+import { CloseOutlined } from "@ant-design/icons";
 import { GiPaperClip } from "react-icons/gi";
+import { useNavigate } from "react-router";
 import axios from "axios";
 
 import "./agregar.css";
 import { File } from "../../file/File";
 import { Agregadas } from "./Agregadas";
+const { useBreakpoint } = Grid;
 
 export const AgregarPeli = () => {
+  const navigate = useNavigate();
+  const screens = useBreakpoint();
 const [file, setFile] = useState({})
   const [exito, setExito] = useState(false);
   const handleSubmit = async (values) => {
@@ -35,15 +39,14 @@ const [file, setFile] = useState({})
       ) : (
         
         <div className='container'>
-
-          <Row gutter={30}>
-            <Col xs={4} sm={4} md={4} lg={24} xl={24}>
-              <div></div>
+              <div className='icon-x' onClick={() => navigate('/')}> <CloseOutlined /> </div>
+          <Row className='navbar-agregar'  gutter={30}>
+            <Col xs={4} sm={4} md={4} lg={6} xl={6}>
             </Col>
-            <Col xs={16} sm={16} md={16} lg={24} xl={24}>
+            <Col xs={16} sm={16} md={16} lg={12} xl={12}>
             <Logo />
             </Col>
-            <Col xs={4} sm={4} md={4} lg={24} xl={24}>
+            <Col xs={4} sm={4} md={4} lg={6} xl={12}>
             <Usuario />
             </Col>
 
@@ -54,12 +57,13 @@ const [file, setFile] = useState({})
               <h3 className="agregar">AGREGAR PELICULA</h3>
             </Col>
           </Row>
+
           <Form onFinish={handleSubmit}>
             <Row gutter={[10, 30]} justify="center" className="contenedor-form">
               <Col span={24}>
                 <File
                 setFile={setFile}
-                  namebtn="Agregar un archivo"
+                  namebtn={!screens.md?"Agregar un archivo":"Agregá un archivo o arrastralo y soltalo aquí"}
                   icon={<GiPaperClip className="btn-icon" />}
                 />
               </Col>

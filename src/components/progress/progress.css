@@ -46,3 +46,14 @@ letter-spacing: 4px;
 
 color: #FFFFFF;
 }
+@media (min-width: 1024px) {
+ .container-progress{
+   padding:50px;
+ }
+.btn-progress{
+  font-size: 20px;
+}
+.load{
+  font-size: 16px;
+}
+}

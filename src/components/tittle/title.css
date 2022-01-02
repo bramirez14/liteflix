@@ -13,3 +13,27 @@
   height: 130px;
   margin-top:10px;
 }
+@media (min-width: 1024px) {
+  .title{
+    margin-left:77px;
+    text-align:start;
+    margin-top: 0;
+    height:60px;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 100px;
+    /* identical to box height, or 83% */
+    
+    letter-spacing: 16px;
+    text-transform: uppercase;
+    
+    /* Aqua */
+    
+    color: #64EEBC;
+
+  }
+
+
+}

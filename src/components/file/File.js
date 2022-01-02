@@ -41,7 +41,7 @@ export const File = ({ namebtn, icon, setFile}) => {
  
   const normFile = async (e) => {
     setFile(e);
-      if (e.file.type.split("/")[1] === "png") {
+      if (e.file.type.split("/")[1] !== "pdf") {
         for (let i = 0; i < array.length; i++) {
           setState({ ...state, load: true });
           await setTimeout(() => {

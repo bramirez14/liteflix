@@ -57,3 +57,49 @@ letter-spacing: 4px;
 
 color: #FFFFFF;
 }
+.icon-drop{
+    font-size: 14px;
+}
+.menu-list{
+    background:#242424;
+}
+.title-movie{
+    font-family: Bebas Neue;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: 4px;
+
+color: #FFFFFF;
+}
+@media (min-width: 1024px) {
+    .menu{
+            height: 112px;
+        left: -200px;
+        top: 0px;
+        border-radius: 0px;
+        
+    }
+    .menu-list{
+        width: 100%;
+    }
+    .container-dropdown {
+        position: absolute;
+        top: 30px;
+        right: 135px;
+    }
+    .ver{
+        font-size: 16px;
+    }
+    .populares{
+        font-size: 16px;
+
+    }
+    .icon-drop{
+        font-size: 12px;
+    }
+}
+

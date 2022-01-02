@@ -8,7 +8,7 @@ export const Movie = ({namemovie, movie}) => {
 
   return (
 
-<div className="contenedor">
+<div className="contenedor-pelicula">
      <figure>
          <img  src={movie}/>
          <div className="capa">

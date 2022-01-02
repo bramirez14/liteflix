@@ -84,8 +84,20 @@
   font-family: Bebas Neue;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   letter-spacing: 4px;
   color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .icon-x{
+    font-size: 20px;
+    float:right;
+    color: #FFFFFF
+  }
+  .navbar-agregar{
+    display:none;
+  }
+
 }

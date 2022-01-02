@@ -15,3 +15,11 @@
   
     font-weight: 400;
 }
+
+@media (min-width: 1024px) {
+   .subtitle{
+       margin-left:78px;
+       text-align:start;
+       margin-top:268px;
+  } 
+}

@@ -1,0 +1,31 @@
+.cont-hamb{display:none;}
+.cont-camp{display:none;}
+
+
+@media (min-width: 1024px) {
+.container-usuario{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row ;
+    justify-content: space-between;
+    width:100%
+}
+
+.icon-campana{
+    font-size: 27px;
+   color: #FFFFFF;
+}
+.ant-badge-dot {
+    width: 11px !important;
+    min-width: 11px !important  ;
+    height: 11px !important;
+   
+}
+
+.ant-badge-count, .ant-badge-dot, .ant-badge .ant-scroll-number-custom-component {
+    top: 12px !important;
+    right: 7px !important;
+
+}
+
+}
