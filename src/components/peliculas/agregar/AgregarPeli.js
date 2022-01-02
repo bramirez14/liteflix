@@ -22,7 +22,7 @@ const [file, setFile] = useState({})
     f.append("file", file?.fileList[0]?.originFileObj);
     f.append("title", values.title);
     let result = await axios.post(
-      "http://localhost:4001/api/liteflix/movies",
+      "https://apiliteflix.herokuapp.com/api/liteflix/movies",
       f
     );
     console.log( result);

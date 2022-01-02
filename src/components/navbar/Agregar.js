@@ -13,7 +13,7 @@ const screens = useBreakpoint();
     <>
        <Button
       className="agrpelicula"
-      ghost
+     /*  ghost */
       shape="circle"
       type={screens.md&&'link'}
       icon={

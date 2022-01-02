@@ -5,6 +5,7 @@ width: 375px;
 left: 0px;
 top: 0px;
 border-radius: 0px;
+padding:20px;
 
 }
 .title-menu{
@@ -78,13 +79,15 @@ color: #FFFFFF;
 @media (min-width: 1024px) {
     .menu{
             height: 112px;
-        left: -200px;
+        left: -50px;
         top: 0px;
         border-radius: 0px;
         
     }
     .menu-list{
-        width: 100%;
+        width: 375px;
+        margin-right: 312px;
+        margin-left: -20px;;
     }
     .container-dropdown {
         position: absolute;
@@ -100,6 +103,9 @@ color: #FFFFFF;
     }
     .icon-drop{
         font-size: 12px;
+    }
+    .ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover {
+         background-color: #242424; 
     }
 }
 
