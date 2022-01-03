@@ -1,7 +1,7 @@
 import { Badge } from "antd";
 import { BotonHamburguesa } from "./BotonHamburguesa";
 import { FiBell} from "react-icons/fi";
-import "./usuario.css";
+import "./css/usuario.css";
 export const Usuario = () => {
   return (
     <>

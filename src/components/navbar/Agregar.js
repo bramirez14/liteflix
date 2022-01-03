@@ -2,7 +2,7 @@ import { Button, Grid } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
 
-import './agreagar.css'
+import './css/agregar.css'
 const { useBreakpoint } = Grid;
 export const Agregar = () => {
 const screens = useBreakpoint();
@@ -13,17 +13,18 @@ const screens = useBreakpoint();
     <>
        <Button
       className="agrpelicula"
+    
      /*  ghost */
       shape="circle"
       type={screens.md && 'link'}
       icon={
         <PlusOutlined
-          style={{ fontSize: 20 }}
+         style={{ fontSize: 20,color:'#ffff' }}
           onClick={() => navigate("/agregar/pelicula")}
         />
       }
     >
-   { screens.md && <span className='text-agregar'> AGREGAR PELICULA </span>} 
+   { screens.md && <span className='text-agregar' onClick={() => navigate("/agregar/pelicula")}  > AGREGAR PELICULA </span>} 
     </Button>
     </>
  

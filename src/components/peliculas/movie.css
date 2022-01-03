@@ -18,7 +18,6 @@
   width: 100%;
   height: 100%;
   transition: all 400ms ease-out;
-  /* will-change: transform; */
 }
 .contenedor-pelicula figure .capa {
   position: absolute;

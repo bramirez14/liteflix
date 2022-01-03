@@ -3,7 +3,7 @@ import { Logo } from "../../navbar/Logo";
 import { Usuario } from "../../navbar/Usuario";
 import { useNavigate } from "react-router";
 
-import "./agregadas.css";
+import "./css/agregadas.css";
 export const Agregadas = () => {
   const navigate = useNavigate();
 

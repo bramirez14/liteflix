@@ -1,0 +1,38 @@
+/* Navbar*/
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+
+
+.lineh {
+  position: absolute;
+  top: 47%;
+  left: 25%;
+  width: 16px;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.linev {
+  position: absolute;
+  top: 47%;
+  left: 25%;
+  width: 16px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  transform: rotate(90deg);
+}
+
+
+/* Perfil */
+.perfil {
+  width: 36px;
+  height: 36px;
+  background: url(../image/perfil.png);
+  border-radius: 50%;
+}
+

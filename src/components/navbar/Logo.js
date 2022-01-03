@@ -1,4 +1,4 @@
-
+import './css/logo.css'
 export const Logo = () => {
     return (
       

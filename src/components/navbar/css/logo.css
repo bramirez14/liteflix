@@ -1,0 +1,45 @@
+/* ORIGINAL DE LITEFLIX */
+.original {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .oriLiteflixbold {
+    font-family: Bebas Neue;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 4px;
+    text-align: center;
+  
+    /* identical to box height */
+  
+    text-align: center;
+    letter-spacing: 4px;
+  
+    color: #64eebc;
+  }
+  
+  .oriLiteflix {
+    font-family: Bebas Neue;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-align: center;
+    letter-spacing: 4px;
+  
+    color: #64eebc;
+  }
+  @media (min-width: 1500px) {
+    .oriLiteflix {
+      font-size: 35px;
+      font-weight: 400;
+    }
+    .oriLiteflixbold {
+      font-size: 35px;
+    }
+  }

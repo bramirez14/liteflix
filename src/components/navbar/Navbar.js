@@ -1,8 +1,9 @@
-import "./navbar.css";
 import { Row, Col } from "antd";
 import { Agregar } from "./Agregar";
 import { Logo } from "./Logo";
 import { Usuario } from "./Usuario";
+import "./css/navbar.css";
+
 export const Navbar = () => {
   return (
     <>
