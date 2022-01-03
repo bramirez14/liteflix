@@ -25,7 +25,7 @@ export const Home = () => {
 
     <Row className="container-title" >
       <Col  xs={24} sm={24} md={24} lg={24} xl={24}>
-      <Original name1="ORIGNILA DE" name2="LITEFLIX" />{/** mobile 154 desctock 273 */}
+      <Original name1="ORIGNILA DE" name2="LITEFLIX" />
       </Col>
 
           
@@ -35,7 +35,7 @@ export const Home = () => {
           </Row>
           
 <div className='container-btn'>
-    <Row >
+    <Row gutter={[20,15]}>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} >
                  <Button className="play" type="text">
                 <CaretRightOutlined /> REPRODUCIR
@@ -59,9 +59,9 @@ export const Home = () => {
         <div className='container-dropdown'>
           <Row>
           <Col>
-            <div style={{ marginTop: 107, marginLeft: 100 }}>
+         
               <Drop />
-            </div>
+          
           </Col>
         </Row>
         </div>
@@ -70,16 +70,16 @@ export const Home = () => {
         <div className="container-movies" >
           {/* /**Peliculas */}
           <Row gutter={[{ xs: 10, sm: 10, md: 10,lg:10}, { xs: 25, sm: 25, md: 4,lg:4}]} >
-            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+            <Col xs={24} sm={24} md={12} lg={24} xl={24}>
               <Movie movie={pelicula1} namemovie="House of Cards" />
             </Col>
-            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+            <Col xs={24} sm={24} md={12} lg={24} xl={24}>
               <Movie movie={pelicula2} namemovie="THE CROWN" />
             </Col>
-            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+            <Col xs={24} sm={24} md={12} lg={24} xl={24}>
               <Movie movie={pelicula3} namemovie="STRANGER THINGS" />
             </Col>
-            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+            <Col xs={24} sm={24} md={12} lg={24} xl={24}>
               <Movie movie={pelicula4} namemovie="MARSEILLE" />
             </Col>
           </Row>

@@ -32,38 +32,45 @@ const [file, setFile] = useState({})
       // navigate(`/lista/rendicion/${id}`);
     }
   };
+  console.log(screens);
   return (
     <>
-      {exito ? (
-        <Agregadas />
-      ) : (
+     
         
         <div className='container'>
-              <div className='icon-x' onClick={() => navigate('/')}> <CloseOutlined /> </div>
-          <Row className='navbar-agregar'  gutter={30}>
-            <Col xs={4} sm={4} md={4} lg={6} xl={6}>
-            </Col>
-            <Col xs={16} sm={16} md={16} lg={12} xl={12}>
-            <Logo />
-            </Col>
-            <Col xs={4} sm={4} md={4} lg={6} xl={12}>
-            <Usuario />
-            </Col>
+              
+        {screens.lg ? <div className='icon-x' onClick={() => navigate('/')}> <CloseOutlined /> </div> :<Row gutter={40} >
+      <Col   xs={{ span:6,order: 1 }} sm={{ span:6,order: 1 }} md={{ span:4,order: 1}} lg={{ span:15,order: 2 }} lg={{ span:15,order: 2 }}>
+        </Col>
+        <Col  xs={{ span:12, order: 2}} sm={{span:12 , order: 2 }} md={{ span:16,order: 2}} lg={{span:4,order: 1 }} lg={{ span:4,order: 1 }}>
+          <Logo />
+        </Col>
+        <Col   xs={{ span:6,order: 3 }} sm={{ span:6,order: 3 }} md={{ span:4,order: 3}} lg={{ span:4,order: 3 }} lg={{ span:4,order: 3, }} 
+       
+        >
+          <Usuario />
+        </Col>
+      </Row>}
 
-          </Row>
 
-          <Row justify="center" className="contenedor-agregar">
-            <Col span={24}>
+ {exito ? (
+  <Agregadas />
+) : (
+  <>
+<Row  className="contenedor-agregar">
+            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
               <h3 className="agregar">AGREGAR PELICULA</h3>
             </Col>
           </Row>
+<div className='form'>
+
 
           <Form onFinish={handleSubmit}>
             <Row gutter={[10, 30]} justify="center" className="contenedor-form">
               <Col span={24}>
                 <File
                 setFile={setFile}
-                  namebtn={!screens.md?"Agregar un archivo":"Agregá un archivo o arrastralo y soltalo aquí"}
+                  namebtn={!screens.lg?"Agregar un archivo":"Agregá un archivo o arrastralo y soltalo aquí"}
                   icon={<GiPaperClip className="btn-icon" />}
                 />
               </Col>
@@ -95,15 +102,18 @@ const [file, setFile] = useState({})
                   </Col>
 
                   <Col span={24} className="contenedor-salir">
-                    <Button className="salir">SALIR </Button>
+                    <Button className="salir" onClick={() => navigate('/')}>SALIR </Button>
                   </Col>
                 </Form.Item>
               </Col>
             </Row>
-          </Form>
+          </Form></div>
+          </>
+
+      )}    
 
           </div>
-      )}
+      
     </>
         
 

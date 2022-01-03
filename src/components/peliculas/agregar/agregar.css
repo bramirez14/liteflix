@@ -32,6 +32,9 @@
   margin-right: 10px;
   font-size: 19px;
 }
+.form{
+  text-align: center;
+}
 /* Titulo*/
 .contenedor-form {
   margin-top: 40px;
@@ -89,9 +92,13 @@
   letter-spacing: 4px;
   color: #ffffff;
 }
+.icon-x{
+display:none;
+}
 
 @media (min-width: 1024px) {
   .icon-x{
+    display:inline;
     font-size: 20px;
     float:right;
     color: #FFFFFF

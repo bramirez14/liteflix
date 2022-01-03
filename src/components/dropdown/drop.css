@@ -91,7 +91,7 @@ color: #FFFFFF;
     }
     .container-dropdown {
         position: absolute;
-        top: 30px;
+        top: 140px;
         right: 135px;
     }
     .ver{
@@ -110,7 +110,9 @@ color: #FFFFFF;
 }
 @media (min-width:1500px){
     .container-dropdown {
-        top:50px;
+        top:170px;
+        right: 180px;
+
     }
 .ver{
     font-size: 18px;

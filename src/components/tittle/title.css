@@ -13,6 +13,9 @@
   height: 130px;
   margin-top:10px;
 }
+@media (min-width:768px){
+.title{height:58px;}
+}
 @media (min-width: 1024px) {
   .title{
     margin-left:77px;

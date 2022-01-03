@@ -1,5 +1,22 @@
 
+@media (min-width: 768px) {
+  .text-agregar {
+    margin-left: 10px;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height */
+    letter-spacing: 4px;
+    /* Blanco */
+    color: #ffffff;
 
+  }
+  .ant-btn .anticon.anticon-plus > svg, .ant-btn .anticon.anticon-minus > svg {
+    shape-rendering: optimizeSpeed;
+    color: #fff;
+}
+}
 @media (min-width: 1024px) {
   .text-agregar {
     margin-left: 10px;
@@ -8,19 +25,9 @@
     font-size: 18px;
     line-height: 18px;
     /* identical to box height */
-
     letter-spacing: 4px;
-
     /* Blanco */
-
     color: #ffffff;
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 12px;
   }
   .ant-btn .anticon.anticon-plus > svg, .ant-btn .anticon.anticon-minus > svg {
     shape-rendering: optimizeSpeed;

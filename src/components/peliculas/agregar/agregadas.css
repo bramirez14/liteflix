@@ -1,3 +1,6 @@
+.pelicula-agregada{
+    text-align: center;
+}
 .congratulations{
 
     font-family: Bebas Neue;
@@ -45,10 +48,5 @@ letter-spacing: 4px;
 
 color: #242424;
 margin-top:120px;
-margin-left:32px;
-/* Inside Auto Layout */
 
-flex: none;
-order: 1;
-flex-grow: 0;
 }

@@ -33,7 +33,7 @@ export const Drop = () => {
       );
     return (
              
-        <Dropdown  overlay={menu} >
+        <Dropdown  overlay={menu} style={{ marginTop: 107, marginLeft: 100 }}>
         <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
         <span className='ver'>VER: </span>  <span className='populares'>POPULARES <DownOutlined className='icon-drop' /></span> 
         </a>
