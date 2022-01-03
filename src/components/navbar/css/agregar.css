@@ -4,7 +4,7 @@
   width: 36px !important;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 1);
-  background:transparent !important;
+  background: transparent !important;
 }
 
 @media (min-width: 768px) {
@@ -18,14 +18,18 @@
     letter-spacing: 4px;
     /* Blanco */
     color: #ffffff;
-
   }
-  .ant-btn .anticon.anticon-plus > svg, .ant-btn .anticon.anticon-minus > svg {
+  .ant-btn .anticon.anticon-plus > svg,
+  .ant-btn .anticon.anticon-minus > svg {
     shape-rendering: optimizeSpeed;
     color: #fff;
-}
+  }
 }
 @media (min-width: 1024px) {
+  .agrpelicula {
+    border: none !important;
+  }
+
   .text-agregar {
     margin-left: 10px;
     font-family: Bebas Neue;
@@ -37,16 +41,15 @@
     /* Blanco */
     color: #ffffff;
   }
-  .ant-btn .anticon.anticon-plus > svg, .ant-btn .anticon.anticon-minus > svg {
+  .ant-btn .anticon.anticon-plus > svg,
+  .ant-btn .anticon.anticon-minus > svg {
     shape-rendering: optimizeSpeed;
     color: #fff;
+  }
 }
-}
-@media (min-width:1500px){
-.text-agregar{
-  font-size: 20px;
-  letter-spacing: 6px;
-
-}
-
+@media (min-width: 1500px) {
+  .text-agregar {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
 }

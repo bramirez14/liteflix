@@ -47,13 +47,13 @@ letter-spacing: 4px;
 color: #FFFFFF;
 }
 .ant-btn:active {
-  color: #242424;
-    border-color: #FFFF;
+  color: #242424 !important;
+    border-color: #FFFF !important;
 
 }
 .ant-btn:hover, .ant-btn:focus {
-  color: #242424;
-  border-color: #FFFF;
+  color: #242424 !important;
+  border-color: #FFFF !important;
 
 } 
 
